@@ -1,5 +1,4 @@
 <?php
-/*
 require_once(get_template_directory() . '/functions/core.php');
 
 call_func(array(
@@ -12,4 +11,3 @@ call_func(array(
 	'dashboard' => true,
 //	'qn/qn-support' => true
 ));
-*/
