@@ -4,15 +4,9 @@ Template: theme
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
   background: black;
   border-top: solid 4px #91e600;
   margin: 0;
-  color: white;
-  padding: 100px 50px;
-  font-size: 80px;
+  padding: 0 50px;
   text-align: center;
-}
-#compatibility {
-  visibility: hidden;
 }
