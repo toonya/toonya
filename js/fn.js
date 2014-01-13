@@ -42,7 +42,7 @@ jQuery(function($) {
 		chars.eq(i).attr('z',z);
 	}
 
-	TweenMax.to($('body'), 5, {backgroundPositionY: '+=5'});
+	TweenMax.to($('body'), 5, {backgroundPositionY: '+=50px'});
 
 
 
@@ -70,12 +70,12 @@ jQuery(function($) {
 					x: move.x*z*z*z*z*z,
 					y: move.y*z*z*z*z*z
 				}
-				console.log(_move.x+' '+_move.y);
+				//console.log(_move.x+' '+_move.y);
 
 				TweenMax.set($(e), {x: _move.x>=0? '+='+_move.x:'-='+(0-_move.x), y: _move.y>=0? '+='+_move.y:'-='+(0-_move.y)});
 			})
 
-			TweenMax.set($('body'), {backgroundPositionX: move.x>=0? '+='+move.x*0.05:'-='+(0-move.x*0.05), backgroundPositionY: move.y>=0? '+='+move.y*0.05:'-='+(0-move.y*0.05)});
+			TweenMax.set($('body'), {backgroundPositionX: move.x>=0? '+='+move.x*0.05+'px':'-='+(0-move.x*0.05)+'px', backgroundPositionY: move.y>=0? '+='+move.y*0.05+'px':'-='+(0-move.y*0.05)+'px'});
 
 		}
 
