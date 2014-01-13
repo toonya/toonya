@@ -42,7 +42,7 @@ jQuery(function($) {
 		chars.eq(i).attr('z',z);
 	}
 
-	TweenMax.to($('body'), 5, {backgroundPositionY: '+=50px'});
+	TweenMax.to($('body'), 5, {backgroundPositionY: '+=50px', onComplete: parallax});
 
 
 
@@ -50,38 +50,40 @@ jQuery(function($) {
 	//tl_title.to(title, 1, {x: '+=500', y: '-=500px', rotation: 3600, fillOpacity: 0, scale: 0, ease: },9);
 
 	//TweenMax.to(chars[0], 1, {transformOrigin:'center center', rotation: 360}, 1);
+	function parallax(){
+		var origin = {
+			x: 0,
+			y: 0
+		}
+		$(window).mousemove(function(e){
+			if(origin.x!=0 && origin.y!=0){
+				var move = {
+					x: (e.pageX - origin.x)*0.1,
+					y: (e.pageY - origin.y)*0.1
+				}
 
-	var origin = {
-		x: 0,
-		y: 0
-	}
-	$(window).mousemove(function(e){
-		if(origin.x!=0 && origin.y!=0){
-			var move = {
-				x: (e.pageX - origin.x)*0.1,
-				y: (e.pageY - origin.y)*0.1
+				//console.log(move.x>=0? '+='+move.x:'-='+(0-move.x));
+
+				chars.each(function(i,e){
+					var z = $(e).attr('z');
+					var _move = {
+						x: move.x*z*z*z*z*z,
+						y: move.y*z*z*z*z*z
+					}
+					//console.log(_move.x+' '+_move.y);
+
+					TweenMax.set($(e), {x: _move.x>=0? '+='+_move.x:'-='+(0-_move.x), y: _move.y>=0? '+='+_move.y:'-='+(0-_move.y)});
+				})
+
+				TweenMax.set($('body'), {backgroundPositionX: move.x>=0? '+='+move.x*0.05+'px':'-='+(0-move.x*0.05)+'px', backgroundPositionY: move.y>=0? '+='+move.y*0.05+'px':'-='+(0-move.y*0.05)+'px'});
+
 			}
 
-			//console.log(move.x>=0? '+='+move.x:'-='+(0-move.x));
+			origin.x = e.pageX;
+			origin.y = e.pageY;
 
-			chars.each(function(i,e){
-				var z = $(e).attr('z');
-				var _move = {
-					x: move.x*z*z*z*z*z,
-					y: move.y*z*z*z*z*z
-				}
-				//console.log(_move.x+' '+_move.y);
+		})
+	}
 
-				TweenMax.set($(e), {x: _move.x>=0? '+='+_move.x:'-='+(0-_move.x), y: _move.y>=0? '+='+_move.y:'-='+(0-_move.y)});
-			})
-
-			TweenMax.set($('body'), {backgroundPositionX: move.x>=0? '+='+move.x*0.05+'px':'-='+(0-move.x*0.05)+'px', backgroundPositionY: move.y>=0? '+='+move.y*0.05+'px':'-='+(0-move.y*0.05)+'px'});
-
-		}
-
-		origin.x = e.pageX;
-		origin.y = e.pageY;
-
-	})
 
 })
