@@ -22,11 +22,20 @@ body {
 .bg-img img {
   width: 100%;
 }
+@keyframes updown45 {
+  from {
+    bottom: 5.5%;
+  }
+  to {
+    bottom: 4%;
+  }
+}
 .page-aware {
   text-align: center;
   position: absolute;
   bottom: 5%;
   left: 50%;
+  animation: updown45 .6s linear 0 infinite alternate;
 }
 .page-aware > span {
   font-size: 6rem;

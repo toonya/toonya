@@ -21,7 +21,7 @@
 		<![endif]-->
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body class="skrollr-body">
     	<div class="bg-img" data-start="top:0px; opacity:1" data-100="opacity:0; top:-50px">
     		<img src="<?php echo get_stylesheet_directory_uri()?>/image/workspace.jpg" width="" height="" alt="" />
     	</div>
@@ -79,7 +79,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo get_template_directory_uri(); ?>/Bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/TweenMax.min.js"></script>
+
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/component.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/fn.js"></script>
