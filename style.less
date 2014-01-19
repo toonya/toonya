@@ -98,6 +98,15 @@ body>h1 {
 	background: rgba(98, 75, 57,1);
 	color: #fff;
 	transform-origin: 50% 0;
+
+	a{
+		.animate(1s);
+
+		&:hover{
+			text-decoration: none;
+			.animate(0s);
+		}
+	}
 }
 section {
 	width: 100%;

@@ -89,6 +89,13 @@ body > h1 {
   color: #fff;
   transform-origin: 50% 0;
 }
+body > h1 a {
+  transition: 1s cubic-bezier(0.33, 0.78, 0.49, 1);
+}
+body > h1 a:hover {
+  text-decoration: none;
+  transition: 0s cubic-bezier(0.33, 0.78, 0.49, 1);
+}
 section {
   width: 100%;
   height: 100%;

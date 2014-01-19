@@ -51,7 +51,7 @@
 				<div class="half-half">
 					<img class="left-top" src="<?php echo get_stylesheet_directory_uri()?>/image/web01.jpg" width="" height="" alt="" />
 				</div>
-				<div class="half-half" data-180="opacity:0; transform:translate(100%)" data-230="opacity:1; transform:translate(0%)">
+				<div class="half-half" data-bottom-top="opacity:0; transform:translate(100%)" data-bottom="opacity:1; transform:translate(0%)">
 					<img class="left-bottom" src="<?php echo get_stylesheet_directory_uri()?>/image/web02.jpg" width="" height="" alt="" />
 				</div>
 			</div>
@@ -59,13 +59,13 @@
 				<img class="right" src="<?php echo get_stylesheet_directory_uri()?>/image/web03.jpg" width="" height="" alt="" />
 			</div>
 		</section>
-		<h1 data-25-bottom="transform:rotateX(90deg); background:#f15a29" data--25-bottom="transform:rotateX(0deg)" class="text-center">Logo 标志</h1>
-		<section>
+		<h1 data-bottom-top="background:#f15a29;transform:translate(100%)" data-bottom="transform:translate(0)" class="text-center">Logo 标志</h1>
+		<section data-bottom-top="transform:translate(-100%)" data-center-top="transform:translate(0)">
 			<img class="right img-responsive" src="<?php echo get_stylesheet_directory_uri()?>/image/logo01.jpg" width="" height="" alt="" />
 		</section>
 
 
-
+		<h1 data-bottom-top="background:#fff;transform:translate(-100%)" data-bottom="transform:translate(0)" class="text-center"><a href="mailto:gareth@toonya.me">Email: gareth@toonya.me</a></h1>
 		<footerr>
 			<div class="text-center">
 				<p><?php echo get_option('copyright'); ?></p>
