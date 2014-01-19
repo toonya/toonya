@@ -1,93 +1,31 @@
 jQuery(function($) {
 
-	console.log();
+	var tl_pageaware = new TimelineMax({repeat: -1, yoyo:true});
+	tl_pageaware.to($('.page-aware'), .5, {bottom: '4%'});
 
-	var title = $('#toonya');
-	var svg  = $('svg');
-	var chars = title.children();
-	TweenMax.set(chars, {fill: '#fff'});
-	var width = svg.outerWidth();
-	var height = svg.outerHeight();
-	var h = 735/svg.parent().width()*svg.parent().height();
-	console.log('svg:'+svg.width()+' '+svg.height()+'   h:'+h);
+/*
+	var scroll = {
+		origin:0,
+		to:$('body').height()
+	};
+	$('.page-aware span').on('click', function(){
+		scroll.to = $('body').height();
+		TweenMax.to(scroll, 0.2, {origin: scroll.to, onUpdate:wsc, onComplete: updateScroll, ease: Strong.easeInOut});
 
-	$('.transform').each(function(i,e) {
-		TweenMax.set($(e), $(e).data());
 	});
 
-	var tl = new TimelineMax(),
-		rough = RoughEase.ease.config({strength:2, clamp:true}),
-		i;
+	function wsc(){
+		console.log(scroll.origin);
+		$(window).scrollTop(scroll.origin);
+	}
 
-	tl.set(chars, {autoAlpha:1})
+	function updateScroll(){
+		scroll.origin = 0;
+		var imgs = $('section').eq(0).find('img').addClass('animate1s');
 
-
-	console.log(Math.random() * (1.5 - 0.5) + 0.5);
-/*
-
-
-	for (i = 0; i < chars.length; i++) {
-		tl.fromTo(chars[i], 3, {transformOrigin:"center -"+h+'px', z:0.1, rotation:((Math.random() < 0.5) ? 90 : -90)}, {rotation:0, ease:Elastic.easeOut}, 0.3 + i * 0.06);
-		tl.to(chars[i], 0.6, {y:96,  ease:Bounce.easeOut}, 3.4 + Math.random() * 0.6);
-		tl.to(chars[i], 0.6, {autoAlpha:0, ease:rough}, 4.5 + Math.random());
-		tl.to(chars[i], 0.6, {autoAlpha:1, ease:rough}, 7 + Math.random());
+		imgs.eq(0).css({'transform':'translate(0)', 'opacity':1});
+		imgs.eq(1).css({'transform':'translate(0)', 'opacity':1});
+		imgs.eq(2).css({'transform':'translate(0)', 'opacity':1});
 	}
 */
-	TweenMax.set(title, {y: '-=200'});
-
-	for (i = 0; i < chars.length; i++) {
-		var z = Math.random() * (1.2 - 0.8) + 0.8;
-		TweenMax.set(chars[i], {transformOrigin:'center center', scale: z*z*z, fill: z * 0xffffff});
-		TweenMax.to(chars[i], 5, {y: '+='+z*400});
-		chars.eq(i).attr('z',z);
-	}
-
-	TweenMax.to($('body'), 5, {backgroundPosition: '0 +=50px', onComplete: parallax});
-
-
-
-	//var tl_title = new TimelineMax();
-	//tl_title.to(title, 1, {x: '+=500', y: '-=500px', rotation: 3600, fillOpacity: 0, scale: 0, ease: },9);
-
-	//TweenMax.to(chars[0], 1, {transformOrigin:'center center', rotation: 360}, 1);
-	function parallax(){
-		var origin = {
-			x: 0,
-			y: 0
-		}
-		$(window).mousemove(function(e){
-			if(origin.x!=0 && origin.y!=0){
-				var move = {
-					x: (e.pageX - origin.x)*0.1,
-					y: (e.pageY - origin.y)*0.1
-				}
-
-				//console.log(move.x>=0? '+='+move.x:'-='+(0-move.x));
-
-				chars.each(function(i,e){
-					var z = $(e).attr('z');
-					var _move = {
-						x: move.x*z*z*z*z*z,
-						y: move.y*z*z*z*z*z
-					}
-					//console.log(_move.x+' '+_move.y);
-
-					TweenMax.set($(e), {x: _move.x>=0? '+='+_move.x:'-='+(0-_move.x), y: _move.y>=0? '+='+_move.y:'-='+(0-_move.y)});
-				})
-				var background_position = {
-						x: move.x>=0? '+='+move.x*0.05+'px':'-='+(0-move.x*0.05)+'px',
-						y: move.y>=0? '+='+move.y*0.05+'px':'-='+(0-move.y*0.05)+'px'
-					}
-
-				TweenMax.set($('body'), {backgroundPosition: background_position.x+' '+background_position.y});
-
-			}
-
-			origin.x = e.pageX;
-			origin.y = e.pageY;
-
-		})
-	}
-
-
 })

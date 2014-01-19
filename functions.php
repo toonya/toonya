@@ -2,7 +2,7 @@
 require_once(get_template_directory() . '/functions/core.php');
 
 call_func(array(
-	'remove-origin' => true,
+//	'remove-origin' => true,
 	'protection-code' => true,
 //	'employee' => true,
 	'browser-check' => array('version'=> 8),

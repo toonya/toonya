@@ -5,18 +5,147 @@ Template: theme
 html, body {
 	height: 100%;
 	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+	padding: 0;
+	background: #252e2e;
+	color: black;
 }
+.bg-img {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
 
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  background:black;
-  border-top:solid 4px #91e600;
-  margin:0;
-  padding:0 50px;
-  text-align:center;
+	img{
+		width: 100%;
+	}
+}
+.page-aware {
+	text-align: center;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+
+
+	&>span {
+		font-size: 6rem;
+		color: black;
+		cursor: pointer;
+	}
+}
+h1,h2,h3{
+	margin: 0;
+	padding: 0;
 }
 
 #startAnimation {
 	width: 100%;
 	height: 100%;
+}
+
+header{
+	width: 100%;
+	background-size: cover;
+	overflow: hidden;
+	background-size: cover;
+	position: relative;
+	.wrap{
+		background: rgba(255,255,255,1);
+		position: relative;
+		z-index: 10;
+	}
+
+	h1{
+		font-size: 10rem;
+		margin: 0;
+		padding: 6rem 0;
+	}
+
+	.service-list{
+		float: right;
+		font-size: 1.8rem;
+		display: table;
+		vertical-align: middle;
+
+		h3{
+			font-weight: bold;
+			margin: 0;
+			padding: 5rem 0 2rem;
+		}
+	}
+}
+
+.animate(@time:1s) {
+	transition:@time cubic-bezier(.33,.78,.49,1);
+}
+.animate1s {
+	.animate();
+}
+.animate2s {
+	.animate(2s);
+}
+.animate05s {
+	.animate(.5s);
+}
+body>h1 {
+	font-size: 6rem;
+	padding: 6rem 0;
+	color: #000;
+	position: relative;
+	z-index: 100;
+	background: rgba(98, 75, 57,1);
+	color: #fff;
+	transform-origin: 50% 0;
+}
+section {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+
+	.item {
+		float: left;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.half{
+		width: 50%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.half-half{
+		height: 50%;
+		overflow: hidden;
+	}
+}
+
+section:nth-of-type(1) {
+/*
+	.left-top {
+		transform: translate(-100%,-100%);
+	}
+
+	.left {
+		transform: translate(-100%);
+		opacity: 0;
+	}
+
+	.left-bottom {
+		transform: translate(-100%,100%);
+	}
+
+	.right{
+		transform: translate(100%);
+		opacity: 0;
+	}
+*/
+
+}
+section:nth-of-type(3){
 }
