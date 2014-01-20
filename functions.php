@@ -5,7 +5,7 @@ call_func(array(
 //	'remove-origin' => true,
 	'protection-code' => true,
 //	'employee' => true,
-	'browser-check' => array('version'=> 8),
+	'browser-check' => array('version'=> 9),
 	'banner-option' => true,
 	'add-setting' => true,
 	'dashboard' => true,
