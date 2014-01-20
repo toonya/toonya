@@ -1,5 +1,14 @@
 jQuery(function($) {
-
+	//vertical_check();
+	function vertical_check() {
+		if($(window).width()<$(window).height())
+			$('#vertical-alert').show();
+		else
+			$('#vertical-alert').hide();
+	}
+	$(window).resize(function() {
+		vertical_check();
+	}
 	//var tl_pageaware = new TimelineMax({repeat: -1, yoyo:true});
 	//tl_pageaware.to($('.page-aware'), .5, {bottom: '4%'});
 

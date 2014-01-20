@@ -12,6 +12,7 @@
         <link href="<?php echo get_template_directory_uri() ?>/Bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="<?php echo get_template_directory_uri(); ?>/css/component.css" rel="stylesheet" media="screen">
         <link href="<?php echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet" media="screen">
+        <script src="<?php echo get_template_directory_uri() ?>/js/prefixfree.min.js"></script>
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -21,17 +22,17 @@
         <?php wp_head(); ?>
     </head>
     <body>
+<!--     	<div id="vertical-alert">请横屏以便浏览</div> -->
+    	<div class="bg" data-start="top:0px; opacity:1" data-100="opacity:0; top:-50px">
+			<div class="page-aware"><span class="glyphicon glyphicon-chevron-down"></span></div>
+    	</div>
     	<div class="page">
     		<div class="wrap">
     			<div class="inner-wrap" id="skrollr-body">
-    				<div class="bg-img" data-start="top:0px; opacity:1" data-100="opacity:0; top:-50px">
-    					<img src="<?php echo get_stylesheet_directory_uri()?>/image/workspace.jpg" width="" height="" alt="" />
-    				</div>
-    				<div data-0="opacity:1" data-100="opacity:0" class="page-aware"><span class="glyphicon glyphicon-chevron-down"></span></div>
 			        <header>
 			        	<div class="wrap">
 			        		<div class="container">
-			        			<div class="service-list">
+			        			<div class="service-list hidden-xs">
 			        			        		<h3>我们的服务:</h3>
 			        			        		<div>Logo 标志</div>
 			        			        		<div>Brochure 小册子</div>
@@ -42,7 +43,7 @@
 			        		</div>
 			        	</div>
 			        </header>
-					<h1 data-0="transform:rotateX(90deg)" data-50="transform:rotateX(0deg)" class="text-center section-title">Webpage Design 网页设计</h1>
+					<h1 data-0="transform:rotateX(90deg)" data-50="transform:rotateX(0deg)" class="text-center section-title"><div>Webpage Design 网页设计</div></h1>
 					<section>
 						<div class="half item" data-80="opacity:0; transform:translate(-100%)" data-130="opacity:1; transform:translate(0%)">
 							<div class="half-half">
@@ -56,13 +57,15 @@
 							<img class="right" src="<?php echo get_stylesheet_directory_uri()?>/image/web03.jpg" width="" height="" alt="" />
 						</div>
 					</section>
-					<h1 data-bottom-top="background:#f15a29;transform:translate(100%)" data-bottom="transform:translate(0)" class="text-center section-title">Logo 标志</h1>
+					<h1 data-bottom-top="background:none" class="text-center section-title"><div data-bottom-top="background:#f15a29;transform:translate(100%)" data-bottom="transform:translate(0)" >Logo 标志</div></h1>
 					<section data-bottom-top="transform:translate(-100%)" data-center-top="transform:translate(0)">
 						<img class="right img-responsive" src="<?php echo get_stylesheet_directory_uri()?>/image/logo01.jpg" width="" height="" alt="" />
 					</section>
 
 
-					<h1 data-bottom-top="background:#fff;transform:translate(-100%)" data-bottom="transform:translate(0)" class="text-center section-title"><a href="mailto:gareth@toonya.me">Email: gareth@toonya.me</a></h1>
+					<h1 data-bottom-top="background:#fff;transform:translate(-100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
+						<a href="mailto:gareth@toonya.me">Email: gareth@toonya.me</a>
+					</div></h1>
 					<footerr>
 						<div class="text-center">
 							<p><?php echo get_option('copyright'); ?></p>
