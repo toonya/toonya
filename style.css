@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   background: #252e2e;
@@ -27,7 +27,6 @@ body {
 }
 html {
   font-size: 6px;
-  font-family: "Microsoft YaHei";
 }
 .bg {
   position: fixed;
