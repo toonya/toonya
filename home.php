@@ -33,17 +33,17 @@
 			        	<div class="wrap">
 			        		<div class="container">
 			        			<div class="service-list hidden-xs">
-			        			        		<h3>我们的服务:</h3>
-			        			        		<div>Logo 标志</div>
-			        			        		<div>Brochure 小册子</div>
-			        			        		<div>Webpage Design 网页设计</div>
-			        			        		<div>Website Develop 网站开发</div>
+			        			        		<h3><span class="cn">我们的服务:</span></h3>
+			        			        		<div>Logo <span class="cn">标志</span></div>
+			        			        		<div>Brochure <span class="cn">小册子</span></div>
+			        			        		<div>Webpage Design <span class="cn">网页设计</span></div>
+			        			        		<div>Website Develop <span class="cn">网站开发</span></div>
 			        			</div>
 			        			<h1>TOONYA</h1>
 			        		</div>
 			        	</div>
 			        </header>
-					<h1 data-0="transform:rotateX(90deg)" data-50="transform:rotateX(0deg)" class="text-center section-title"><div>Webpage Design 网页设计</div></h1>
+					<h1 data-0="transform:rotateX(90deg)" data-50="transform:rotateX(0deg)" class="text-center section-title"><div>Webpage Design <span class="cn">网页设计</span></div></h1>
 					<section>
 						<div class="half item" data-80="opacity:0; transform:translate(-100%)" data-130="opacity:1; transform:translate(0%)">
 							<div class="half-half">
@@ -57,7 +57,7 @@
 							<img class="right" src="<?php echo get_stylesheet_directory_uri()?>/image/web03.jpg" width="" height="" alt="" />
 						</div>
 					</section>
-					<h1 data-bottom-top="background:none" class="text-center section-title"><div data-bottom-top="background:#f15a29;transform:translate(100%)" data-bottom="transform:translate(0)" >Logo 标志</div></h1>
+					<h1 data-bottom-top="background:none" class="text-center section-title"><div data-bottom-top="background:#f15a29;transform:translate(100%)" data-bottom="transform:translate(0)" >Logo <span class="cn">标志</span></div></h1>
 					<section data-bottom-top="transform:translate(-100%)" data-center-top="transform:translate(0)">
 						<img class="right img-responsive" src="<?php echo get_stylesheet_directory_uri()?>/image/logo01.jpg" width="" height="" alt="" />
 					</section>
