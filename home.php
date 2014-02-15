@@ -66,6 +66,9 @@
 					<h1 data-bottom-top="background:#fff;transform:translate(-100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
 						<a href="mailto:gareth@toonya.me">Email: gareth@toonya.me</a>
 					</div></h1>
+					<h1 data-bottom-top="background:#abc;transform:translate(100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
+						<a href="mailto:gareth@toonya.me">QQ & Phone: 182-9011-0250</a>
+					</div></h1>
 					<footerr>
 						<div class="text-center">
 							<p><?php echo get_option('copyright'); ?></p>
@@ -90,7 +93,7 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/skrollr/dist/skrollr.min.js"></script>
 
 	<script type="text/javascript">
-	skrollr.init({forceHeight: true});
+	skrollr.init({forceHeight: true,smoothScrolling: true});
 	</script>
     <?php wp_footer();?>
   </body>
