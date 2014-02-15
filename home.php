@@ -66,8 +66,8 @@
 					<h1 data-bottom-top="background:#fff;transform:translate(-100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
 						<a href="mailto:gareth@toonya.me">Email: gareth@toonya.me</a>
 					</div></h1>
-					<h1 data-bottom-top="background:#abc;transform:translate(100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
-						<a href="mailto:gareth@toonya.me">QQ & Phone: 182-9011-0250</a>
+					<h1 data-bottom-top="background:#3388CD;transform:translate(100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
+						<a style="color:#fff" href="mailto:gareth@toonya.me">QQ & Phone: 182-9011-0250</a>
 					</div></h1>
 					<footerr>
 						<div class="text-center">
