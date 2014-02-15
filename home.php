@@ -47,26 +47,26 @@
 					<section>
 						<div class="half item" data-80="opacity:0; transform:translate(-100%)" data-130="opacity:1; transform:translate(0%)">
 							<div class="half-half">
-								<img class="left-top" src="<?php echo get_stylesheet_directory_uri()?>/image/web01.jpg" width="" height="" alt="" />
+								<img class="left-top" src="http://codepen.qiniudn.com/toonya//web01.jpg" width="" height="" alt="" />
 							</div>
 							<div class="half-half" data-bottom-top="opacity:0; transform:translate(100%)" data-bottom="opacity:1; transform:translate(0%)">
-								<img class="left-bottom" src="<?php echo get_stylesheet_directory_uri()?>/image/web02.jpg" width="" height="" alt="" />
+								<img class="left-bottom" src="http://codepen.qiniudn.com/toonya//web02.jpg" width="" height="" alt="" />
 							</div>
 						</div>
 						<div class="half item" data-80="opacity:0; transform:translate(100%)" data-130="opacity:1; transform:translate(0%)">
-							<img class="right" src="<?php echo get_stylesheet_directory_uri()?>/image/web03.jpg" width="" height="" alt="" />
+							<img class="right" src="http://codepen.qiniudn.com/toonya//web03.jpg" width="" height="" alt="" />
 						</div>
 					</section>
 					<h1 data-bottom-top="background:none" class="text-center section-title"><div data-bottom-top="background:#f15a29;transform:translate(100%)" data-bottom="transform:translate(0)" >Logo <span class="cn">标志</span></div></h1>
 					<section data-bottom-top="transform:translate(-100%)" data-center-top="transform:translate(0)">
-						<img class="right img-responsive" src="<?php echo get_stylesheet_directory_uri()?>/image/logo01.jpg" width="" height="" alt="" />
+						<img class="right img-responsive" src="http://codepen.qiniudn.com/toonya//logo01.jpg" width="" height="" alt="" />
 					</section>
 
 
 					<h1 data-bottom-top="background:#fff;transform:translate(-100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
 						<a href="mailto:gareth@toonya.me">Email: gareth@toonya.me</a>
 					</div></h1>
-					<h1 data-bottom-top="background:#3388CD;transform:translate(100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
+					<h1 data-bottom-top="background:#1D6298;transform:translate(100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
 						<a style="color:#fff" href="mailto:gareth@toonya.me">QQ & Phone: 182-9011-0250</a>
 					</div></h1>
 					<footerr>
