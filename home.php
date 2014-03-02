@@ -30,7 +30,6 @@
     	<div class="page">
     		<div class="wrap">
     			<div class="inner-wrap" id="skrollr-body">
-    			<div class="scrollr-over-hidden">
 			        <header>
 			        	<div class="wrap">
 			        		<div class="container">
@@ -63,15 +62,12 @@
 					<section data-bottom-top="transform:translate(-100%)" data-center-top="transform:translate(0)">
 						<img class="right img-responsive" src="http://codepen.qiniudn.com/toonya//logo01.jpg" width="" height="" alt="" />
 					</section>
-
-
-					<h1 data-bottom-top="background:#fff;transform:translate(-100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
+					<h1 data-bottom-top="background:none" class="text-center section-title"><div data-bottom-top="background:#fff; transform:translate(-100%)" data-bottom="transform:translate(0)">
 						<a href="mailto:gareth@toonya.me">Email: gareth@toonya.me</a>
 					</div></h1>
-					<h1 data-bottom-top="background:#1D6298;transform:translate(100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
-						<a style="color:#fff" href="mailto:gareth@toonya.me">QQ & Phone: 182-9011-0250</a>
+					<h1 data-bottom-top="background:none" class="text-center section-title"><div data-bottom-top="background:#1D6298; transform:translate(-100%)" data-bottom="transform:translate(0)">
+						<a style="color:#fff" href="tel:18290110250">QQ & Phone: 182-9011-0250</a>
 					</div></h1>
-    			</div>
     			</div>
     		</div>
     	</div>
