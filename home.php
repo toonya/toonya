@@ -7,7 +7,8 @@
 			else
 				echo get_the_title().' | '.get_bloginfo('blogname');
 			?></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <!-- Bootstrap -->
         <link href="<?php echo get_template_directory_uri() ?>/Bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="<?php echo get_template_directory_uri(); ?>/css/component.css" rel="stylesheet" media="screen">
@@ -29,6 +30,7 @@
     	<div class="page">
     		<div class="wrap">
     			<div class="inner-wrap" id="skrollr-body">
+    			<div class="scrollr-over-hidden">
 			        <header>
 			        	<div class="wrap">
 			        		<div class="container">
@@ -69,14 +71,7 @@
 					<h1 data-bottom-top="background:#1D6298;transform:translate(100%)" data-bottom="transform:translate(0)" class="text-center section-title"><div>
 						<a style="color:#fff" href="mailto:gareth@toonya.me">QQ & Phone: 182-9011-0250</a>
 					</div></h1>
-					<footerr>
-						<div class="text-center">
-							<p><?php echo get_option('copyright'); ?></p>
-						</div>
-						<div class="hide">
-							<?php echo get_option('51la'); ?>
-						</div>
-					</footer>
+    			</div>
     			</div>
     		</div>
     	</div>
@@ -85,7 +80,6 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo get_template_directory_uri(); ?>/Bootstrap/dist/js/bootstrap.min.js"></script>
-
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/component.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/fn.js"></script>
