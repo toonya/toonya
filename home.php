@@ -82,13 +82,9 @@
     <script src="<?php echo get_template_directory_uri(); ?>/Bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/component.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/skrollr/dist/skrollr.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/fn.js"></script>
 
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/skrollr/dist/skrollr.min.js"></script>
-
-	<script type="text/javascript">
-	skrollr.init({forceHeight: true,smoothScrolling: true});
-	</script>
     <?php wp_footer();?>
   </body>
 </html>

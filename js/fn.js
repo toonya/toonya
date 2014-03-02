@@ -1,5 +1,7 @@
 jQuery(function($) {
-	//vertical_check();
+
+	skrollr.init({forceHeight: true,smoothScrolling: true});
+/*
 	function vertical_check() {
 		if($(window).width()<$(window).height())
 			$('#vertical-alert').show();
@@ -9,4 +11,5 @@ jQuery(function($) {
 	$(window).resize(function() {
 		vertical_check();
 	})
+*/
 })
