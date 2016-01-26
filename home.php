@@ -29,7 +29,7 @@
     	</div>
     	<div class="page">
     		<div class="wrap">
-    			<div class="inner-wrap" id="skrollr-body">
+    			<div class="inner-wrap" id="skrollr-body" style="perspective: 2500px; -webkit-perspective: 2500px;">
 			        <header>
 			        	<div class="wrap">
 			        		<div class="container">
@@ -44,7 +44,7 @@
 			        		</div>
 			        	</div>
 			        </header>
-					<h1 data-0="transform:rotateX(90deg)" data-50="transform:rotateX(0deg)" class="text-center section-title"><div>Webpage Design <span class="cn">网页设计</span></div></h1>
+					<h1 data-0="transform:rotateX(-90deg)" data-50="transform:rotateX(0deg)" class="text-center section-title"><div>Webpage Design <span class="cn">网页设计</span></div></h1>
 					<section>
 						<div class="half item" data-80="opacity:0; transform:translate(-100%)" data-130="opacity:1; transform:translate(0%)">
 							<div class="half-half">
