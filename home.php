@@ -14,7 +14,7 @@
         <link href="<?php echo get_template_directory_uri(); ?>/css/component.css" rel="stylesheet" media="screen">
         <link href="<?php echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet" media="screen">
         <script src="<?php echo get_template_directory_uri() ?>/js/prefixfree.min.js"></script>
-
+		<script type="text/javascript" name="baidu-tc-cerfication" src="http://apps.bdimg.com/cloudaapi/lightapp.js#61659a276226daad1aa158ab243610b6"></script><script type="text/javascript">window.bd && bd._qdc && bd._qdc.init({app_id: 'a4757fc3c0c39ae2ba95d65b'});</script>
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/html5shiv.js"></script>
