@@ -30,7 +30,7 @@
     	<div class="page">
     		<div class="wrap">
     			<div class="inner-wrap" id="skrollr-body" style="perspective: 2500px; -webkit-perspective: 2500px;">
-			        <header>
+			        <header style="z-index: 999;">
 			        	<div class="wrap">
 			        		<div class="container">
 			        			<div class="service-list hidden-xs">
